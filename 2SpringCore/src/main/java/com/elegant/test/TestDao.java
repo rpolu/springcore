@@ -1,4 +1,4 @@
-package com.elegant.tewst;
+package com.elegant.test;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -9,16 +9,16 @@ public class TestDao {
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext cpxac = new ClassPathXmlApplicationContext("applicationcontext.xml");
 		StudentDao dao = cpxac.getBean(StudentDao.class);
-
 		StudentModel model = new StudentModel();
-		model.setRollNum(908);
+		model.setRollNum(910);
 		model.setName("Elegent");
 		model.setMarks(100);
 		model.setAddress("bangalore");
 
 		dao.SaveStudent(model);
 
-		System.out.println(" Saved successfully");
+		System.out.println("Saved successfully");
+
 	}
 
 }

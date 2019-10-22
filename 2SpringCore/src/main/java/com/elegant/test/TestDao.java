@@ -10,7 +10,7 @@ public class TestDao {
 		ClassPathXmlApplicationContext cpxac = new ClassPathXmlApplicationContext("applicationcontext.xml");
 		StudentDao dao = cpxac.getBean(StudentDao.class);
 		StudentModel model = new StudentModel();
-		model.setRollNum(910);
+		model.setRollNum(914);
 		model.setName("Elegent");
 		model.setMarks(100);
 		model.setAddress("bangalore");
@@ -18,6 +18,8 @@ public class TestDao {
 		dao.SaveStudent(model);
 
 		System.out.println("Saved successfully");
+
+		cpxac.close();
 
 	}
 

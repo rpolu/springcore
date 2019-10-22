@@ -7,4 +7,9 @@
 	<context:annotation-config />
 	<context:component-scan
 		base-package="com.elegant"></context:component-scan>
+
+	<bean id="h" class="com.elegant.helper.EmployeeUtil"
+		init-method="m1" destroy-method="m2">
+
+	</bean>
 </beans>

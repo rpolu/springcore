@@ -1,0 +1,47 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean id="myCollection" class="com.elegant.bean.MyCollection">
+		<constructor-arg name="myList">
+			<list>
+				<value>List Value A</value>
+				<value>List Value B</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg name="mySet">
+			<set>
+				<value>Set Value A</value>
+				<value>Set Value B</value>
+			</set>
+		</constructor-arg>
+		<constructor-arg name="myMap">
+			<map>
+				<entry key="0" value="Map Value A" />
+				<entry key="1" value="Map Value B" />
+			</map>
+		</constructor-arg>
+		<constructor-arg name="myProp">
+			<props>
+				<prop key="propKeyA">Prop Value A</prop>
+				<prop key="propKeyB">Prop Value B</prop>
+			</props>
+		</constructor-arg>
+		<constructor-arg name="bookList">
+			<list>
+				<ref bean="book1" />
+				<ref bean="book2" />
+			</list>
+		</constructor-arg>
+	</bean>
+	<bean id="book1" class="com.elegant.bean.Book">
+		<property name="bookId" value="100" />
+		<property name="bookName" value="Godan" />
+	</bean>
+	<bean id="book2" class="com.elegant.bean.Book">
+		<property name="bookId" value="200" />
+		<property name="bookName" value="Nirmla" />
+	</bean>
+</beans>

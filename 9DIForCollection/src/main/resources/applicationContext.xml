@@ -7,26 +7,26 @@
 	<bean id="myCollection" class="com.elegant.bean.MyCollection">
 		<constructor-arg name="myList">
 			<list>
-				<value>List Value A</value>
-				<value>List Value B</value>
+				<value>rama</value>
+				<value>mohan</value>
 			</list>
 		</constructor-arg>
 		<constructor-arg name="mySet">
 			<set>
-				<value>Set Value A</value>
-				<value>Set Value B</value>
+				<value>mohan</value>
+				<value>reddy</value>
 			</set>
 		</constructor-arg>
 		<constructor-arg name="myMap">
 			<map>
-				<entry key="0" value="Map Value A" />
-				<entry key="1" value="Map Value B" />
+				<entry key="0" value="xyz" />
+				<entry key="1" value="abc" />
 			</map>
 		</constructor-arg>
 		<constructor-arg name="myProp">
 			<props>
-				<prop key="propKeyA">Prop Value A</prop>
-				<prop key="propKeyB">Prop Value B</prop>
+				<prop key="propKeyA">sahin</prop>
+				<prop key="propKeyB">dravid</prop>
 			</props>
 		</constructor-arg>
 		<constructor-arg name="bookList">
@@ -38,10 +38,10 @@
 	</bean>
 	<bean id="book1" class="com.elegant.bean.Book">
 		<property name="bookId" value="100" />
-		<property name="bookName" value="Godan" />
+		<property name="bookName" value="corejava" />
 	</bean>
 	<bean id="book2" class="com.elegant.bean.Book">
 		<property name="bookId" value="200" />
-		<property name="bookName" value="Nirmla" />
+		<property name="bookName" value="adv java" />
 	</bean>
 </beans>

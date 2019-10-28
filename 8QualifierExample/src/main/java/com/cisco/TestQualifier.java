@@ -7,7 +7,7 @@ import com.cisco.config.SpringConfig;
 import com.cisco.dtag.dao.DtagDao;
 import com.cisco.dtag.service.DtagService;
 
-public class TestSpring {
+public class TestQualifier {
 
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext();

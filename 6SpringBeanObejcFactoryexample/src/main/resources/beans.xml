@@ -4,7 +4,14 @@
 	xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-	<bean id="studentService" class="com.elegant.StudentService"
-		factory-method="getService"></bean>
+	<bean id="studentService"
+		class="com.elegant.service.StudentService" factory-method="getService"></bean>
+
+
+	<bean id="schoolFactory"
+		class="com.elegant.school.factory.SchoolFactory"
+		factory-method="getSchool">
+		<constructor-arg value="hyd" />
+	</bean>
 
 </beans>

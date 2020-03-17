@@ -4,9 +4,11 @@
 	xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean id="empDao" class="com.elegant.EmpDao">
+	</bean>
 
-	<bean id="eb" class="com.springioc.Empl" scope="prototype">
-
+	<bean id="empService" class="com.elegant.EmpService">
+		<property name="empDao" ref="empDao"></property>
 	</bean>
 
 

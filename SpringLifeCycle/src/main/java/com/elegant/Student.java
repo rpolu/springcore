@@ -2,6 +2,10 @@ package com.elegant;
 
 public class Student {
 
+	public Student() {
+		System.out.println("from Student()");
+	}
+
 	public void init() {
 		System.out.println("from init()");
 	}

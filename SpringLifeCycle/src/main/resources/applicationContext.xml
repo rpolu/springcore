@@ -8,5 +8,9 @@
 	<bean id="s" class="com.elegant.Student" init-method="init"
 		destroy-method="destory">
 	</bean>
+	
+	<bean id="e" class="com.elegant.Employee">
+	
+	</bean>
 
 </beans>

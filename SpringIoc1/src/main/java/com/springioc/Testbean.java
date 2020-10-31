@@ -9,7 +9,11 @@ public class Testbean {
 	public static void main(String[] args) {
 		Resource resource = new ClassPathResource("config.xml");
 		BeanFactory beanFactory = new XmlBeanFactory(resource);
-		Empl empl1 = (Empl) beanFactory.getBean("eb");
-		empl1.displayData();
+
+		Empl eb1 = (Empl) beanFactory.getBean("eb");
+		Empl eb2 = (Empl) beanFactory.getBean("eb");
+
+		System.out.println(eb1);
+		System.out.println(eb2);
 	}
 }

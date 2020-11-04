@@ -3,7 +3,6 @@ package com.elegant.service;
 import com.elegant.dao.EmployeeDao;
 
 public class EmployeeService {
-
 	private EmployeeDao employeeDao;// Dependency instance variable
 
 	public EmployeeService(EmployeeDao employeeDao) {

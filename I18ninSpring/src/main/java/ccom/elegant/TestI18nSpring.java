@@ -7,17 +7,15 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class TestI18nSpring {
 
 	public static void main(String[] args) {
-		String user = "Thulasi";
 
-		ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext(
-				"applicationContext.xml");
+		ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-		String greetings = classPathXmlApplicationContext.getMessage("user.greet.message", null, Locale.ITALY);
-		String welcomeUser = classPathXmlApplicationContext.getMessage("user.welcome", new Object[] { user },
-				Locale.ITALIAN);
+		String greetings = ac.getMessage("user.greet.message", null, Locale.FRENCH);
+		String welcomeUser = ac.getMessage("user.welcome", new Object[] { "Nakul", "Sachin" }, Locale.FRENCH);
+
 		System.out.println(greetings);
 		System.out.println(welcomeUser);
 
-		classPathXmlApplicationContext.close();
+		ac.close();
 	}
 }

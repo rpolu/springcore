@@ -4,13 +4,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import com.cisco.dtag.dao.DtagDao;
+import com.cisco.dtag.dao.EmployeeDao;
 
 @Service
-public class DtagService {
+public class EmployeeService {
+	
 	@Autowired
-	@Qualifier("dtag2")
-	private DtagDao dao;
+	@Qualifier("dao1")
+	private EmployeeDao dao;
 
 	public void m1() {
 		System.out.println(" from m1()");

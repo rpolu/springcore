@@ -11,7 +11,6 @@ public class TestPolacyInsert {
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
-
 		PolacyModel polacyModel = new PolacyModel();
 
 		System.out.println("Please eneter the Polacy Number");
@@ -30,6 +29,7 @@ public class TestPolacyInsert {
 		System.out.println("Please eneter the Polacy Tenture");
 		int tenture = scanner.nextInt();
 		polacyModel.setTenture(tenture);
+		
 		System.out.println("Please eneter the Polacy Address");
 		String address = scanner.next();
 		polacyModel.setAddress(address);
@@ -37,6 +37,7 @@ public class TestPolacyInsert {
 		ClassPathXmlApplicationContext cxac = new ClassPathXmlApplicationContext("applicationContext.xml");
 		PolacyService polacyService = cxac.getBean(PolacyService.class);
 		polacyService.savePolacy(polacyModel);
+		
 		System.out.println("Polcay details are saved successfully");
 		scanner.close();
 		cxac.close();

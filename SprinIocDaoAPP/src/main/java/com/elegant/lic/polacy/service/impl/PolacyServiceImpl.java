@@ -18,7 +18,7 @@ public class PolacyServiceImpl implements PolacyService {
 	}
 
 	public PolacyModel getPolacyDetails(String pNum) {
-		return null;
+		return polacyDao.getPolacyDetails(pNum);
 	}
 
 }

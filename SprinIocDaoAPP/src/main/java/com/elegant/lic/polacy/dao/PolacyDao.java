@@ -3,27 +3,24 @@ package com.elegant.lic.polacy.dao;
 import com.elegant.lic.policy.model.PolacyModel;
 
 /**
- * Polacy Drud DAO
+ * This class is used for Polacy Crud operations
  * 
  * @author rpolu
  *
  */
 public interface PolacyDao {
-
 	/**
-	 * For taking Polacy
+	 * To Save the polacy details
 	 * 
 	 * @param polacyModel
-	 * @param a
 	 */
 	public void savePolacy(PolacyModel polacyModel);
 
 	/**
-	 * Get the polacy Details based pNum
+	 * Get the polacy details based on Polacy number
 	 * 
 	 * @param pNum
 	 * @return
 	 */
 	public PolacyModel getPolacyDetails(String pNum);
-
 }

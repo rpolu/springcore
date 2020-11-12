@@ -3,6 +3,10 @@ package com.elegant.lic.policy.model;
 import java.io.Serializable;
 
 public class PolacyModel implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String pNum;
 	private String name;
 	private double premium;

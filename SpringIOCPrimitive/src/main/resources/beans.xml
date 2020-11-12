@@ -8,8 +8,14 @@
 		<property name="empNum" value="1000" />
 		<property name="name" value="ElegantStudent">
 		</property>
-
 		<property name="address" value="Bangalore"></property>
+		<property name="names">
+			<list>
+				<value>nakul</value>
+				<value>sachin</value>
+				<value>anup</value>
+			</list>
+		</property>
 	</bean>
 
 
